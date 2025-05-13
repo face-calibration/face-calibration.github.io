@@ -18,7 +18,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon.ico">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -60,36 +60,36 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://face-calibration.github.io"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Paper (Under Review!)</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://face-calibration.github.io"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv (Under Review!)</span>
                 </a>
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href="https://www.youtube.com/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Video (TBD!)</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -110,13 +110,11 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/dalton_jonesy_compare.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        Our face calibration methods improve the semantic correctness of facial performance retargeting.
       </h2>
     </div>
   </div>
@@ -189,7 +187,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In this paper, we consider retargeting a tracked facial performance to either another person or to a virtual character in a game or virtual reality (VR) environment. We remove the difficulties associated with identifying and retargeting the semantics of one rig framework to another by utilizing the same framework (3DMM, FLAME, MetaHuman, etc.) for both subjects. Although this does not constrain the choice of framework when retargeting from one person to another, it does force the tracker to use the game/VR character rig when retargeting to a game/VR character. We utilize volumetric morphing in order to fit facial rigs to both performers and targets; in addition, a carefully chosen set of Simon-Says expressions is used to calibrate each rig to the motion signatures of the relevant performer or target. Although a uniform set of Simon-Says expressions can likely be used for all person to person retargeting, we argue that person to game/VR character retargeting benefits from Simon-Says expressions that capture the distinct motion signature of the game/VR character rig. The Simon-Says calibrated rigs tend to produce the desired expressions when exercising animation controls (as expected). Unfortunately, these well-calibrated rigs still lead to undesirable controls when tracking a performance (a well-behaved function can have an arbitrarily ill-conditioned inverse), even though they typically produce acceptable geometry reconstructions. Thus, we propose a fine-tuning approach that modifies the rig used by the tracker in order to promote the output of more semantically meaningful animation controls, facilitating high efficacy retargeting. In order to better address real-world scenarios, the fine-tuning relies on implicit differentiation so that the tracker can be treated as a (potentially non-differentiable) black box.
+            In this paper, we consider retargeting a tracked facial performance to other people or virtual characters. We utilize the same rig framework, such as MetaHuman, FLAME, or Fortnite, for both tracking and animation in order to remove the difficulties associated with retargeting the semantics of one framework to another. A carefully chosen set of Simon-Says expressions and regularizers is used to calibrate each rig to the motion signatures of the relevant performer or target. Although a uniform set of Simon-Says expressions can likely be used for all person to person retargeting, we argue that person to virtual character retargeting benefits from an expression set that captures the distinct motion signature of the virtual character rig. The Simon-Says calibrated rigs tend to produce the desired expressions when exercising animation controls. Unfortunately, these well-calibrated rigs still lead to undesirable controls when tracking a performance, even though they generally produce acceptable geometry reconstructions. Thus, we propose a fine-tuning approach that modifies the rig used by the tracker in order to promote the output of more semantically meaningful animation controls, facilitating high efficacy retargeting. In order to better address real-world scenarios, the fine-tuning relies on implicit differentiation so that the tracker can be treated as a potentially non-differentiable black box.
           </p>
         </div>
       </div>
@@ -339,14 +337,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/face-calibration/face-calibration.github.io">source code</a> of this website, which itelf is a fork of <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-            We just ask that you link back to this page in the footer.
+            Website template courtesy of <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
           </p>
         </div>
       </div>
